@@ -105,7 +105,7 @@ int main()
                 }
             }
             if (sdl_event.type == SDL_MOUSEBUTTONDOWN) {
-                if (sdl_event.button.button == SDL_BUTTON_LEFT)
+                if (sdl_event.button.button == SDL_BUTTON_LEFT || sdl_event.button.button == SDL_BUTTON_RIGHT)
                 {
                     SDL_GetMouseState(&pos_x, &pos_y);
                     mouse_movement = 1;
